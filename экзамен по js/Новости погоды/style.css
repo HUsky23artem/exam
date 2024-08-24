@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('doskaFon.jpg');
+}
+
+.container {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(218, 219, 218, 0.856);
+    text-align: center;
+    width: 300px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f3f0f0;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: rgba(14, 216, 47, 0.856);;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherResult {
+    margin-top: 20px;
+}
+h2{
+    background-color: rgba(14, 216, 47, 0.856);
+}
+p{
+    background-color: rgba(14, 216, 47, 0.856);
+}

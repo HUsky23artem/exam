@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Столбцы</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <p class="slidecontainer">
+                <input type="range" min="1000" max="20000" value="1000" class="slider" id="monthly_payment">
+                <h2>Сумма кредита: 
+                    <span type="lableMonthSum" id="sum_value"> </span>
+                </h2>
+            </p>
+            <p class="slidecontainer">
+                <input type="range" min="1" max="20" value="5" step="0.1"class="slider" id="interest_rate" oninput="updateRateValue()">
+                <h2>Процентная ставка от 1 до 20%: 
+                    <span type="password" id="total_sum_value"></span>
+                </h2>
+            </p>
+            <p class="slidecontainer">
+                <input type="range" min="1" max="10" value="1" class="slider" id="maturity_period">
+                <h2>Срок погашения от 1 года до 10 лет:  
+                    <span type="password" id="Overpayment_value"></span>
+                </h2>
+            </p>
+        </div>
+        <div class="column">
+            <form>
+                <br>
+                <h2>
+                    <label for="sum">Ежемесячный платёж: 
+                        <span type="password" id="sum"></span>
+                    </label>
+                </h2>
+                <br>
+                <br>
+                <h2>
+                    <label for="total_sum">Общая сумма платежа: 
+                        <span type="password" id="total_sum"></span>
+                    </label>
+                </h2>
+                <br>
+                <br>
+                <h2>
+                    <label for="Overpayment">Переплата: 
+                        <span type="password" id="Overpayment"></span>
+                    </label>
+                </h2>
+            </form>
+        </div>
+        <input type="button" name="print" value="Распечатать" />
+    </div>
+    <script src="log.js"></script>
+</body>
+</html>

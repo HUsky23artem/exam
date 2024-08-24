@@ -1,0 +1,68 @@
+body{
+    background-image: url('bank.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid green;
+    border-radius: 30px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px; /* Увеличьте или уменьшите по своему желанию */
+
+}
+
+.slidecontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Отступ между элементами */
+}
+
+input[type="range"] {
+    margin-right: 10px; /* Отступ между ползунком и заголовком */
+}
+/* Стиль для поля ввода */  
+input[type="text"] {  
+    width: 300px; /* Ширина поля ввода */  
+    height: 40px; /* Высота поля ввода */  
+    font-size: 18px; /* Размер шрифта в поле ввода */  
+    padding: 5px; /* Поля внутри поля ввода */  
+    margin: 10px; /* Отступы вокруг поля ввода */  
+}  
+
+/* Стиль для кнопки */  
+input[type="button"] {  
+    width: 150px; /* Ширина кнопки */  
+    height: 55px; /* Высота кнопки */  
+    font-size: 18px; /* Размер шрифта на кнопке */  
+    background-color: #007BFF; /* Цвет фона */  
+    color: #fff; /* Цвет текста */  
+    border: none; /* Убираем рамку */  
+    cursor: pointer; /* Курсор в виде руки при наведении */  
+    margin: 10px; /* Отступы вокруг кнопки */  
+}  
+
+input[type="button"]:hover {  
+    background-color: #0db986; /* Цвет фона при наведении */  
+    width: 150px; /* Ширина кнопки */  
+    height: 55px; /* Высота кнопки */ 
+}
+
+span {
+    margin-left: 10px;
+    font-weight: bold;
+}
